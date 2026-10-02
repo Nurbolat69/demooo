@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Әдебиет танытқыш: 100 жыл (1926 — 2026) | Дәстүрлі мұра және заманауи медиа</title>
+  <meta name="description" content="Ахмет Байтұрсынұлының «Әдебиет танытқышына» 100 жыл. 1926 жылғы дәстүрлі жанрлардан 2026 жылғы сандық медиаға дейінгі мультимедиалық сабақтастық.">
+
+  <!-- Google Fonts: Montserrat & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       ЖОҒАРҒЫ ШАПКА ЖӘНЕ НАВИГАЦИЯ (HEADER & PILL NAVIGATION)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-top">
+        <!-- Логотип "100 ЖЫЛ" -->
+        <a href="index.html" class="brand-link" title="Басты бетке өту">
+          <img src="assets/icons/logo_100.svg" alt="100 Жыл эмблемасы" class="brand-logo-img">
+        </a>
+
+        <!-- Орталық бас тақырып -->
+        <div class="brand-title-wrap">
+          <h1 class="brand-main-title">ӘДЕБИЕТ ТАНЫТҚЫШ: 100 ЖЫЛ</h1>
+          <span class="brand-sub-badge">1926 — 2026 • ҒЫЛЫМИ МҰРА ЖӘНЕ САНДЫҚ ТОЛҚЫН</span>
+        </div>
+
+        <!-- Оң жақ: Дыбыс, Іздеу және әлеуметтік желілер -->
+        <div class="header-actions-right">
+          <!-- «Аққұм» күйінің батырмасы мен мини-эквалайзері -->
+          <button class="header-sound-btn" id="headerSoundBtn" title="«Аққұм» күйін қосу / кідірту">
+            <span class="mini-eq">
+              <span class="mini-eq-bar"></span>
+              <span class="mini-eq-bar"></span>
+              <span class="mini-eq-bar"></span>
+              <span class="mini-eq-bar"></span>
+            </span>
+            <span>Аққұм күйі</span>
+          </button>
+
+          <!-- Іздеу жолағы -->
+          <div class="search-box">
+            <input type="text" class="search-input" id="globalSearchInput" placeholder="Іздеу..." aria-label="Сайт бойынша іздеу">
+            <button class="search-btn" id="globalSearchBtn" aria-label="Іздеуді бастау">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Әлеуметтік желілер -->
+          <div class="social-links">
+            <a href="https://vk.com" target="_blank" rel="noopener" class="social-icon-btn" title="VK">
+              <svg viewBox="0 0 24 24"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.072-1.785.748-2.502 1.637-2.502.664 0 .934.348 1.488 1.25.753 1.226 1.408 2.167 2.656 2.167h2.906c.725 0 1.134-.378.925-1.077-.384-1.282-2.182-3.237-2.434-3.593-.342-.483-.244-.704 0-1.107.03-.049 2.503-3.606 2.766-4.908.136-.677-.246-.916-.848-.916h-2.906c-.503 0-.742.268-.925.704-.492 1.171-1.397 3.037-2.025 3.524-.265.205-.386.136-.386-.239V9.113c0-.623-.179-.916-.704-.916h-4.577c-.389 0-.616.292-.616.571 0 .612.894.754.985 2.477v3.743c0 .819-.148.968-.471.968-.865 0-2.973-3.136-4.223-6.721-.24-.691-.482-.916-1.116-.916H2.175c-.777 0-.933.364-.933.766 0 .717.917 4.272 4.269 8.971 2.235 3.134 5.385 4.938 8.243 4.938h-.592z"/></svg>
+            </a>
+            <a href="https://t.me" target="_blank" rel="noopener" class="social-icon-btn" title="Telegram">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.18 3.35-1.38 3.73-1.39.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .36z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" title="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-icon-btn" title="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вкладкалар навигациясы (Pills) -->
+      <nav class="nav-pills-bar" aria-label="Басты навигация">
+        <a href="index.html" class="nav-pill-btn active">БАСТЫ БЕТ</a>
+        <a href="aueze.html" class="nav-pill-btn">ӘУЕЗЕ</a>
+        <a href="tolgau.html" class="nav-pill-btn">ТОЛҒАУ</a>
+        <a href="aitys.html" class="nav-pill-btn">АЙТЫС</a>
+        <a href="timeline.html" class="nav-pill-btn">ТАЙМЛАЙН</a>
+        <a href="izimen.html" class="nav-pill-btn">АХМЕТТІҢ ІЗІМЕН</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       ХЕРО БӨЛІМІ: 1926 — 2026 ТАРИХИ ЖӘНЕ САНДЫҚ ДӘУІР САБАҚТАСТЫҒЫ
+       ========================================================================== -->
+  <section class="hero-split-section mode-balanced" id="heroSplitSection">
+    <!-- Фондық қабаттар: Тарихи алтын пергамент пен Кибер-көк матрица бір-біріне кіріккен -->
+    <div class="hero-backdrop-layer">
+      <div class="backdrop-historical"></div>
+      <div class="backdrop-digital"></div>
+      <div class="central-light-portal"></div>
+    </div>
+
+    <div class="hero-content-wrap">
+      <!-- 100 жылдық уақыт сәулесі мен интерактивті Уақыт машинасы (Time Machine Slider) -->
+      <div class="timeline-beam-bar">
+        <!-- Сол жақ түйін: 1926 -->
+        <div class="year-node left-1926" id="left1926Node" title="1926 жылғы дәстүрлі мұраға өту">
+          <span class="year-node-circle"></span>
+          <span class="year-text">1926</span>
+        </div>
+
+        <!-- Орталық интерактивті Уақыт машинасы ползуногы -->
+        <div class="era-slider-controller">
+          <div class="era-slider-track-wrap">
+            <input type="range" class="era-range-slider" id="eraRangeSlider" min="0" max="100" value="50" step="1" aria-label="1926 мен 2026 арасындағы уақыт машинасы" title="Дәуірлер арасында жылжытыңыз">
+          </div>
+          <div class="era-status-indicator" id="eraStatusIndicator">
+            ⚡ <strong>100 ЖЫЛДЫҚ ТОҒЫСУ:</strong> ТЕКСТЕР МЕН САНДЫҚ МҮМКІНДІКТЕРДІҢ 50/50 ҮЙЛЕСІМІ
+          </div>
+          <div class="era-presets-row">
+            <button type="button" class="era-preset-btn" data-value="0">📜 1926: Дәстүрлі мұра</button>
+            <button type="button" class="era-preset-btn preset-balanced active" data-value="50">⚡ 50/50: 100 Жыл тоғысуы</button>
+            <button type="button" class="era-preset-btn preset-digital" data-value="100">🚀 2026: Сандық медиа</button>
+          </div>
+        </div>
+
+        <!-- Оң жақ түйін: 2026 -->
+        <div class="year-node right-2026" id="right2026Node" title="2026 жылғы сандық медиаға өту">
+          <span class="year-node-circle"></span>
+          <span class="year-text">2026</span>
+        </div>
+      </div>
+
+      <!-- Екі дәуірдің салыстырмалы фото-витринасы -->
+      <div class="hero-dual-grid">
+        <!-- СОЛ ЖАҚ КАРТОЧКА: 1926 ДӘСТҮРЛІ МҰРА -->
+        <div class="epoch-card card-historical" id="cardHistorical">
+          <div class="epoch-header-badge">
+            <h2 class="epoch-badge-title">ДӘСТҮРЛІ МҰРА: ӘДЕБИ ЖАНРЛАР</h2>
+            <span class="epoch-tag">Классикалық кезең</span>
+          </div>
+
+          <div class="epoch-visual-stage">
+            <img src="assets/images/ahmet_1926_study.jpg" alt="Ахмет Байтұрсынұлы жұмыс бөлмесіндегі шынайы тарихи бейнесі" class="epoch-visual-img">
+            <div class="epoch-visual-overlay"></div>
+
+            <!-- Тұлға плашкасы -->
+            <div class="epoch-floating-pill">
+              <span class="pill-avatar-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+              </span>
+              <span class="pill-title">Ахмет Байтұрсынұлы</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ОҢ ЖАҚ КАРТОЧКА: 2026 ЗАМАНАУИ МЕДИА -->
+        <div class="epoch-card card-digital" id="cardDigital">
+          <div class="epoch-header-badge">
+            <h2 class="epoch-badge-title">ЗАМАНАУИ МЕДИА: САНДЫҚ ФОРМАТТАР</h2>
+            <span class="epoch-tag">Сандық дәуір</span>
+          </div>
+
+          <div class="epoch-visual-stage">
+            <img src="assets/images/media_2026_creator.jpg" alt="Заманауи қазақ сандық контент жасаушысы студияда" class="epoch-visual-img">
+            <div class="epoch-visual-overlay"></div>
+
+            <!-- Медиа тегтері: VLOG, PODCAST, POST -->
+            <div class="media-badges-group">
+              <span class="media-mini-chip pulse">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                LIVE
+              </span>
+              <span class="media-mini-chip">VLOG</span>
+              <span class="media-mini-chip">PODCAST</span>
+              <span class="media-mini-chip">POST</span>
+            </div>
+
+            <!-- Сандық формат плашкасы -->
+            <div class="epoch-floating-pill">
+              <span class="pill-avatar-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+              </span>
+              <span class="pill-title">Интерактивті медиа контент</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ИНТЕРАКТИВТІ САЛЫСТЫРУ БЛОКТАРЫ (COMPARISON SECTION)
+       ========================================================================== -->
+  <section class="comparison-section" id="comparisonSection">
+    <div class="comparison-grid">
+
+      <!-- ================= 1-МОДУЛЬ: ӘУЕЗЕ vs VLOG/СТОРИТЕЛЛИНГ ================= -->
+      <div class="compare-module-card module-aueze-vlog">
+        <div class="module-head-row">
+          <h3 class="module-title">ӘУЕЗЕ vs VLOG/СТОРИТЕЛЛИНГ</h3>
+          <span style="font-size: 0.75rem; font-weight: 800; color: #B45309; letter-spacing: 1px;">БАЯНДАУ ДӘСТҮРІ</span>
+        </div>
+
+        <div class="module-dual-content">
+          <!-- Сол жағы: Көшпелілердің суреттік әуезелері (Көне қолжазба) -->
+          <div class="sub-preview-box" id="manuscriptTrigger" title="Қолжазбаны толық қарау">
+            <div class="manuscript-thumb">
+              <img src="assets/images/ancient_manuscript.jpg" alt="1926 жылғы Әдебиет танытқыш көне қолжазба беті">
+              <span class="thumb-overlay-badge">1926 Мұра</span>
+            </div>
+            <div class="sub-box-footer">
+              <div class="sub-box-title">КӨШПЕЛІЛЕРДІҢ СҮРЕТТІК ӘУЕЗЕЛЕРІ</div>
+            </div>
+          </div>
+
+          <!-- Ортадағы VS белгісі -->
+          <div class="vs-badge-wrap">
+            <div class="vs-circle">VS</div>
+          </div>
+
+          <!-- Оң жағы: Заманауи Влог ойнатқышы -->
+          <div class="video-player-mockup" id="vlogPlayerTrigger" title="Бейнені көру">
+            <div class="video-thumb-stage">
+              <img src="assets/images/kazakh_vlog_village.jpg" alt="Ауылдағы күнделік саяхат влогы">
+              <div class="video-play-center">
+                <div class="play-triangle-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+              </div>
+              <div class="video-platforms-badges">
+                <span class="platform-icon" title="YouTube">
+                  <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </span>
+                <span class="platform-icon" title="TikTok">
+                  <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                </span>
+              </div>
+              <span class="video-duration-tag">14:32</span>
+            </div>
+            <div class="video-mockup-footer">
+              <div class="video-mockup-title">АУЫЛДАҒЫ КҮНДЕЛІК (ВЛОГ)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кейіпкердің түсініктемесі мен сөйлесу бұлты -->
+        <div class="module-bottom-spokesman">
+          <div class="spokesman-avatar" title="Ахметтанушы спикер">
+            <svg viewBox="0 0 24 24" fill="#B45309"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+          <div class="spokesman-bubble">
+            <strong>«Әуезе»</strong> — оқиғаны көз алдына елестетіп, көркем баяндау тәсілі. Бүгінде бұл дәстүр қызықты саяхат влогтары мен сандық сторителлинг ретінде жаңғырды.
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 2-МОДУЛЬ: ТОЛҒАУ vs ПОДКАСТ ================= -->
+      <div class="compare-module-card module-tolgau-podcast">
+        <div class="module-head-row">
+          <h3 class="module-title">ТОЛҒАУ vs ПОДКАСТ</h3>
+          <span style="font-size: 0.75rem; font-weight: 800; color: #38BDF8; letter-spacing: 1px;">ПӘЛСАПА ЖӘНЕ ДЫБЫС</span>
+        </div>
+
+        <div class="module-dual-content">
+          <!-- Сол жағы: Абай мен Ахметтің классикалық толғау цитатасы -->
+          <div class="tolgau-quote-box">
+            <div class="quote-top-header">ТОЛҒАУ (АБАЙДАН, АХМЕТТЕН)</div>
+            <div class="quote-text-body">
+              «Мүлкішік көңіл жартас биігінде, өткен мен бүгіннің сарабын салып, терең сыр толғау... Өмір тынысы мен халық тағдырын сөз құдіретімен жеткізу.»
+            </div>
+            <div class="quote-author-bottom">ТОЛҒАУ (АБАЙДАН)</div>
+          </div>
+
+          <!-- Ортадағы VS белгісі -->
+          <div class="vs-badge-wrap">
+            <div class="vs-circle">VS</div>
+          </div>
+
+          <!-- Оң жағы: Интерактивті Подкаст ойнатқышы -->
+          <div class="podcast-interactive-box">
+            <div class="podcast-top-info">
+              <span class="podcast-badge">EPISODE #100</span>
+              <span class="podcast-time-counter" id="podcastTimeDisplay">01:45 / 05:20</span>
+            </div>
+
+            <!-- Анимациялық эквалайзер толқыны -->
+            <div class="waveform-bars-wrap" id="waveformWrap">
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+              <div class="wave-bar"></div>
+            </div>
+
+            <div class="podcast-controls-row">
+              <button class="podcast-play-btn" id="podcastPlayBtn" aria-label="Тыңдау" title="Тыңдау">
+                <!-- Play Icon -->
+                <svg id="iconPlay" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <!-- Pause Icon (hidden by default) -->
+                <svg id="iconPause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </button>
+              <div class="podcast-track-name">ТЕРЕҢ ОЙЛАРДЫ ТЫҢДАУ (ПОДКАСТ)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Тыңдарман кейіпкерінің сөйлесу бұлты -->
+        <div class="module-bottom-spokesman">
+          <div class="spokesman-avatar" title="Подкаст тыңдарманы">
+            <svg viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+          </div>
+          <div class="spokesman-bubble">
+            <strong>«Толғау»</strong> — бұрын ақынның ой-толғамы болса, бүгінде ол сапалы авторлық подкаст ретінде мыңдаған тыңдарманның жүрегіне жол тартты.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3D ИНТЕРАКТИВТІ СВИТЧЕР: ӘУЕЗЕ • ТОЛҒАУ • АЙТЫС (ҮШ ТАҒАН)
+       ========================================================================== -->
+  <section class="concept-switcher-section" id="conceptSwitcherSection">
+    <div class="section-headline-wrap">
+      <span class="section-badge-top">ӘДЕБИЕТ ТАНЫТҚЫШТЫҢ ҮШ ТАҒАНЫ</span>
+      <h2 class="section-headline-title">САНА МЕН СӨЗ ӨНЕРІНІҢ ТҮРЛЕРІ</h2>
+    </div>
+
+    <!-- Табтар / Батырмалар -->
+    <div class="concept-tabs-nav">
+      <button class="concept-tab-btn active" data-target="tab-aueze">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+        <span>ӘУЕЗЕ (Тысқарғы ғалам)</span>
+      </button>
+      <button class="concept-tab-btn" data-target="tab-tolgau">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+        <span>ТОЛҒАУ (Ішкергі ғалам)</span>
+      </button>
+      <button class="concept-tab-btn" data-target="tab-aitys">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 7V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+        <span>АЙТЫС (Диалог / Тартыс)</span>
+      </button>
+    </div>
+
+    <!-- 1-Панель: ӘУЕЗЕ -->
+    <div class="concept-panel active" id="tab-aueze">
+      <div class="concept-info-left">
+        <span class="concept-genre-badge badge-gold-solid">Тысқарғы ғалам • Эпос • Жанрлардың кәрісі</span>
+        <h3 class="concept-title-big">Әуезе — сыртқы дүние оқиғасын суреттеу</h3>
+        <p class="concept-text-lead">
+          «Әуезелеуші айтатын сөзіне өзін қатыстырмай, өзінен тысқары ғаламда болған істі әңгіме қылады. Ақын уақиғаның ішінде өзі болып сөйлемей, тек естіген адамша сырттан көрік береді.»
+        </p>
+        <div class="concept-traits-list">
+          <div class="concept-trait-row">
+            <span class="trait-icon" style="background: rgba(245, 158, 11, 0.2); color: #F59E0B;">✓</span>
+            <span><strong>Объект:</strong> Тысқы ғалам — адамдар, заттар, табиғат пен уақиғалар.</span>
+          </div>
+          <div class="concept-trait-row">
+            <span class="trait-icon" style="background: rgba(245, 158, 11, 0.2); color: #F59E0B;">✓</span>
+            <span><strong>Эволюция:</strong> Көшпелілердің ауызша хикаяларынан бүгінгі саяхат влогтары мен визуалды сторителлингке дейін.</span>
+          </div>
+        </div>
+        <a href="aueze.html" class="concept-card-cta cta-gold">Әуезе тарауын толық оқу →</a>
+      </div>
+      <div class="concept-visual-right">
+        <img src="assets/images/ancient_manuscript.jpg" alt="Әуезе қолжазбасы">
+        <div class="concept-visual-overlay">
+          <span class="visual-caption">1926 ж. Ташкент қолжазбасы • Көркем сөздің тысқарғы түрі</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2-Панель: ТОЛҒАУ -->
+    <div class="concept-panel" id="tab-tolgau">
+      <div class="concept-info-left">
+        <span class="concept-genre-badge badge-cyan-solid">Ішкергі ғалам • Лирика • Ортаншысы</span>
+        <h3 class="concept-title-big">Толғау — жүректің лебі, көңіл құсының сайрауы</h3>
+        <p class="concept-text-lead">
+          «Толғанғанда айтатын нәрсесін толғаушы тысқарғы ғаламнан алмай, ішкергі ғаламнан алады. Адамның санасы сүгірет машинасы емес — ол нәрсенің тұрпатын түсіріп қана қоймай, ойды да, көңілді де бірдей оятады.»
+        </p>
+        <div class="concept-traits-list">
+          <div class="concept-trait-row">
+            <span class="trait-icon" style="background: rgba(14, 165, 233, 0.2); color: #38BDF8;">✓</span>
+            <span><strong>Объект:</strong> Ішкі ғалам — рух, ақыл, қиял, көңілдің шері мен қуанышы.</span>
+          </div>
+          <div class="concept-trait-row">
+            <span class="trait-icon" style="background: rgba(14, 165, 233, 0.2); color: #38BDF8;">✓</span>
+            <span><strong>Эволюция:</strong> Жыраулар толғауынан Абай философиясына, қазіргі авторлық подкаст мәдениетіне дейін.</span>
+          </div>
+        </div>
+        <a href="tolgau.html" class="concept-card-cta cta-cyan">Толғау тарауын толық оқу →</a>
+      </div>
+      <div class="concept-visual-right">
+        <img src="assets/images/ahmet_1926_study.jpg" alt="Толғаныс үстіндегі ойшыл">
+        <div class="concept-visual-overlay">
+          <span class="visual-caption">Ахмет Байтұрсынұлы жұмыс бөлмесінде • Ішкі ғалам тебіренісі</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-Панель: АЙТЫС -->
+    <div class="concept-panel" id="tab-aitys">
+      <div class="concept-info-left">
+        <span class="concept-genre-badge badge-rose-solid">Диалог • Тартыс • Алаң алданышы • Кішісі</span>
+        <h3 class="concept-title-big">Айтыс — екі балуандай сөзбен күресу</h3>
+        <p class="concept-text-lead">
+          «Айтысқанда екі күрескен балуандар сияқты бірін-бірі аңдиды, әдіс қолданады. Айтыс бара-бара өмірдің сәулесі түсетін алаң алданышына (драма мен театрға) айналатын табиғи жолға ие.»
+        </p>
+        <div class="concept-traits-list">
+          <div class="concept-trait-row">
+            <span class="trait-icon" style="background: rgba(225, 29, 72, 0.2); color: #FDA4AF;">✓</span>
+            <span><strong>Объект:</strong> Қоғамдағы кемшіліктерді түзету, сөз тапқырлығы, драмалық тартыс.</span>
+          </div>
+          <div class="concept-trait-row">
+            <span class="trait-icon" style="background: rgba(225, 29, 72, 0.2); color: #FDA4AF;">✓</span>
+            <span><strong>Эволюция:</strong> Дәстүрлі сөз сайысынан сахналық драмаға және заманауи интеллектуалды баттлдарға дейін.</span>
+          </div>
+        </div>
+        <a href="aitys.html" class="concept-card-cta cta-rose">Айтыс тарауын толық оқу →</a>
+      </div>
+      <div class="concept-visual-right">
+        <img src="assets/images/kazakh_vlog_village.jpg" alt="Айтыс және сөз майданы">
+        <div class="concept-visual-overlay">
+          <span class="visual-caption">Сөз сайысы мен суырыпсалма өнер • Алаң алданышы</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ИНТЕРАКТИВТІ «ПАСПОРТ ЖАНРОВ» (CORE FEATURE)
+       ========================================================================== -->
+  <section class="genre-passports-section" id="genrePassportsSection">
+    <div class="passports-container">
+      <div class="section-headline-wrap">
+        <span class="section-badge-top">РЕФИЦИАЛДЫ ЗЕРТТЕУ АТЛАСЫ • CORE FEATURE</span>
+        <h2 class="section-headline-title">САНДЫҚ МЕДИА ЖӘНЕ ДӘСТҮРЛІ ӘДЕБИ ЖАНРЛАРДЫҢ ТӨЛҚҰЖАТЫ</h2>
+        <p style="color: #94A3B8; max-width: 850px; margin: 10px auto 0; font-size: 0.95rem;">
+          Ахмет Байтұрсынұлының «Әдебиет танытқыш» (1926) еңбегіндегі үштік жүйе мен XXI ғасырдың танымал цифрлық форматтарының терең функционалдық байланысы. Төлқұжатты ашып, әр жанрдың ерекшелігімен танысыңыз.
+        </p>
+      </div>
+
+      <div class="passports-grid">
+        <!-- ПАСПОРТ 1: ТОЛҒАУ ↔ ПОДКАСТ -->
+        <div class="passport-card theme-cyan open">
+          <div class="passport-header-bar">
+            <div class="passport-header-left">
+              <div class="passport-meta-tags">
+                <span class="passport-badge">ІШКЕРГІ ҒАЛАМ</span>
+                <span style="font-size: 0.76rem; color: #38BDF8; font-weight: 700;">№01 ПАСПОРТ</span>
+              </div>
+              <h3 class="passport-title">Толғау ↔ Авторлық Подкаст / Аудио-эссе</h3>
+            </div>
+            <div class="passport-accordion-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </div>
+          </div>
+          <div class="passport-content-body">
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Аналог по Байтурсынулы:
+              </span>
+              <div class="passport-row-value">
+                <strong>Толғау (ішкергі ғалам сөзі).</strong> Ақын өз жанының күйін, көңіл шерін, жүрек лебін және дүние туралы философиялық ойларын баяндайды. Сана — жай ғана фотоаппарат емес, толғаныс қайнары.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                Заманауи цифрлық жанр:
+              </span>
+              <div class="passport-row-value">
+                <strong>Авторлық подкаст, аудио-монолог, интеллектуалды сұхбат.</strong> Спикердің жеке ой-тұжырымына, атмосфералық дауыс ырғағына және аудиториямен жеке сырласуға құрылған медиа түрі.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Негізгі белгілері мен құрылымы:
+              </span>
+              <div class="passport-row-value">
+                Ішкі сыр ашу, эмпатия, рухани жақындық, өзекті философиялық сұрақтар, минималистік тыныш монтаж және терең мазмұн.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H5V8h14v10z"/></svg>
+                Казнеттен нақты мысалдар:
+              </span>
+              <div class="kaznet-examples-pills">
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Dope Söz» (Шыңғыс Қапин)</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Zamandas Podcast» (Ержан Рашев)</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Oylan Podcast» (Әділбек Ғазиз)</span>
+              </div>
+            </div>
+
+            <div class="passport-quote-note">
+              «Толғанғанда айтатын нәрсесін толғаушы тысқарғы ғаламнан алмай, ішкергі ғаламнан алады. Ақынның мақсаты — сөйлеген сөзімен өзгелердің көңіліне әсер ету.» — А. Байтұрсынұлы
+            </div>
+          </div>
+        </div>
+
+        <!-- ПАСПОРТ 2: ӘУЕЗЕ ↔ САЯХАТ ВЛОГЫ -->
+        <div class="passport-card theme-gold open">
+          <div class="passport-header-bar">
+            <div class="passport-header-left">
+              <div class="passport-meta-tags">
+                <span class="passport-badge">ТЫСҚАРҒЫ ҒАЛАМ</span>
+                <span style="font-size: 0.76rem; color: #FCD34D; font-weight: 700;">№02 ПАСПОРТ</span>
+              </div>
+              <h3 class="passport-title">Әуезе ↔ Саяхат Влогы / Визуалды Сторителлинг</h3>
+            </div>
+            <div class="passport-accordion-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </div>
+          </div>
+          <div class="passport-content-body">
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Аналог по Байтурсынулы:
+              </span>
+              <div class="passport-row-value">
+                <strong>Әуезе (тысқарғы ғалам уақиғасы).</strong> Автор сөзге өзін қатыстырмай, сыртқы әлемдегі адамдар, саяхаттар, заттар мен табиғат көріністерін көріктеп, оқырманның көз алдына келтіреді.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                Заманауи цифрлық жанр:
+              </span>
+              <div class="passport-row-value">
+                <strong>Travel-влог, YouTube деректі бейнесі, визуалды сандық репортаж.</strong> Камера объективі арқылы нақты мекенді, тарих пен тұрмысты көрерменге баяндайтын динамикалық бейне өнім.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Негізгі белгілері мен құрылымы:
+              </span>
+              <div class="passport-row-value">
+                Оқиғаны көзбен көргендей суреттеу, автордың бақылаушы ретіндегі объективтілігі, көркем монтаж, локациялар атмосферасы және нақты фактілер.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H5V8h14v10z"/></svg>
+                Казнеттен нақты мысалдар:
+              </span>
+              <div class="kaznet-examples-pills">
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Aul Travel» (Қазақ ауылдары мен табиғаты)</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Qazaq Geographic» (Тарихи экспедициялар)</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Dauletten Vlog» (Әлеуметтік күнделік)</span>
+              </div>
+            </div>
+
+            <div class="passport-quote-note">
+              «Әуезелеуші айтатын сөзіне өзін қатыстырмай, өзінен тысқары ғаламда болған істі әңгіме қылады. Уақиғаға айтушы өзінше көрік беріп, шығарғандағы сөзі әуезе болады.» — А. Байтұрсынұлы
+            </div>
+          </div>
+        </div>
+
+        <!-- ПАСПОРТ 3: АЙТЫС-ТАРТЫС ↔ ДЕБАТ / РЭП-БАТТЛ -->
+        <div class="passport-card theme-rose">
+          <div class="passport-header-bar">
+            <div class="passport-header-left">
+              <div class="passport-meta-tags">
+                <span class="passport-badge">АЛАҢ АЛДАНЫШЫ</span>
+                <span style="font-size: 0.76rem; color: #FDA4AF; font-weight: 700;">№03 ПАСПОРТ</span>
+              </div>
+              <h3 class="passport-title">Айтыс-тартыс ↔ Онлайн Дебат / Рэп-баттл / Сайыс</h3>
+            </div>
+            <div class="passport-accordion-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </div>
+          </div>
+          <div class="passport-content-body">
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Аналог по Байтурсынулы:
+              </span>
+              <div class="passport-row-value">
+                <strong>Айтыс-тартыс (алаң алданышы, сөз күресі).</strong> Екі ақынның немесе шешеннің майданға шығып, тапқыр сөздерімен балуандай бірін-бірі аңдып, әдіс қолданып күресуі.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 7V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/></svg>
+                Заманауи цифрлық жанр:
+              </span>
+              <div class="passport-row-value">
+                <strong>Стримингтік дебаттар, Freestyle рэп-баттл, TikTok сөз қағыстары.</strong> Тікелей эфирде қарсыластардың интеллектуалды немесе рифмалық тартысы, қоғамдық мәселелерді өткір сынау.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Негізгі белгілері мен құрылымы:
+              </span>
+              <div class="passport-row-value">
+                Диалогтық қақтығыс, қарсыластың кемшілігін дәйекпен ұту, суырыпсалма жылдамдық, әділ төрешілер мен көрерменнің тікелей реакциясы.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H5V8h14v10z"/></svg>
+                Казнеттен нақты мысалдар:
+              </span>
+              <div class="kaznet-examples-pills">
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Jaidarman сөз қағысы»</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Qazaq Rap Battle» (16 жол сайысы)</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Ұлттық пікірталас лигасы турнирлері»</span>
+              </div>
+            </div>
+
+            <div class="passport-quote-note">
+              «Айтысқанда екі күрескен балуандар сияқты бірін-бірі аңдиды, әдіс қолданады... Айтыс арқылы қоғамның кемшілігі түзеледі.» — А. Байтұрсынұлы
+            </div>
+          </div>
+        </div>
+
+        <!-- ПАСПОРТ 4: ӘУЕЗЕ ШЕЖІРЕСІ ↔ ТВИТТЕР ТРЕДТЕРІ -->
+        <div class="passport-card theme-emerald">
+          <div class="passport-header-bar">
+            <div class="passport-header-left">
+              <div class="passport-meta-tags">
+                <span class="passport-badge">ЖЫЛНАМА ЖӘНЕ ШЕЖІРЕ</span>
+                <span style="font-size: 0.76rem; color: #6EE7B7; font-weight: 700;">№04 ПАСПОРТ</span>
+              </div>
+              <h3 class="passport-title">Әуезе шежіресі ↔ Твиттер (X) Тредтері / Күнделіктер</h3>
+            </div>
+            <div class="passport-accordion-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+            </div>
+          </div>
+          <div class="passport-content-body">
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                Аналог по Байтурсынулы:
+              </span>
+              <div class="passport-row-value">
+                <strong>Әуезе шежіресі, жылнама және тарихи жазбалар.</strong> Оқиғалардың уақыт ретімен тізбектеліп, ұрпаққа сақталуы үшін қысқа әрі жүйелі баяндалуы.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                Заманауи цифрлық жанр:
+              </span>
+              <div class="passport-row-value">
+                <strong>X (Twitter) тредтері, Threads микро-эсселері, сандық жазбалар.</strong> Ықшам жазбалар тізбегімен күрделі тарихи немесе қоғамдық оқиғаны қадам-қадаммен талдап түсіндіру.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Негізгі белгілері мен құрылымы:
+              </span>
+              <div class="passport-row-value">
+                Ақпараттық ықшамдылық, назар аударатын кіріспе (Hook), фактілер хронологиясы, құжаттық сілтемелер мен ретроспектива.
+              </div>
+            </div>
+
+            <div class="passport-row">
+              <span class="passport-row-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H5V8h14v10z"/></svg>
+                Казнеттен нақты мысалдар:
+              </span>
+              <div class="kaznet-examples-pills">
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Qazaq History Threads» (Тарихи хроникалар)</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Алаш қайраткерлері туралы желілік тредтер»</span>
+                <span class="kaznet-pill"><span class="pill-dot"></span>«Ауыл шежіресі микро-блогтары»</span>
+              </div>
+            </div>
+
+            <div class="passport-quote-note">
+              «Шежіре — өткен уақиғалардың тізбегін үзбей, кейінгіге жеткізетін сөз өнерінің тарихи тарауы.» — А. Байтұрсынұлы
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ЗЕРТТЕУ НӘТИЖЕЛЕРІ (4-КРИТЕРИЙ: ҒЫЛЫМИ ЗЕРТТЕУ)
+       ========================================================================== -->
+  <section class="research-section" id="researchSection">
+    <div class="research-container">
+      <div class="section-headline-wrap">
+        <span class="section-badge-top">ҒЫЛЫМИ ЗЕРТТЕУ • 4-КРИТЕРИЙ</span>
+        <h2 class="section-headline-title">«ӘДЕБИЕТ ТАНЫТҚЫШ МЕН САНДЫҚ КЕҢІСТІК» ЭМПИРИКАЛЫҚ ЗЕРТТЕУІ</h2>
+        <p style="color: #94A3B8; max-width: 850px; margin: 10px auto 0; font-size: 0.95rem;">
+          250 оқушы, жас контент-мейкер және ұстаз арасында жүргізілген әлеуметтік-салыстырмалы сауалнама нәтижелері (2025–2026 оқу жылы).
+        </p>
+      </div>
+
+      <!-- 3 Негізгі көрсеткіштер баннері -->
+      <div class="research-stats-banner">
+        <div class="stat-metric-card">
+          <div class="metric-num gold">250</div>
+          <div class="metric-desc">Сауалнамаға қатысқан оқушылар мен жас контент-мейкерлер саны</div>
+        </div>
+        <div class="stat-metric-card">
+          <div class="metric-num cyan">78%</div>
+          <div class="metric-desc">Байтұрсынұлының теориясын сандық контентпен дәл сәйкестендіре алды</div>
+        </div>
+        <div class="stat-metric-card">
+          <div class="metric-num emerald">100%</div>
+          <div class="metric-desc">Ғылыми гипотезаның дәлелденуі мен әдістемелік тиімділігі</div>
+        </div>
+      </div>
+
+      <!-- Графиктер торы -->
+      <div class="research-visual-grid">
+        <!-- 1-Диаграмма: Donut Chart -->
+        <div class="chart-card-box">
+          <h3 class="chart-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 2.07c3.61.45 6.48 3.33 6.93 6.93H13V4.07zM4 12c0-4.07 3.06-7.44 7-7.93v15.87c-3.94-.48-7-3.85-7-7.94zm9 7.93V13h6.93c-.45 3.61-3.32 6.48-6.93 6.93z"/></svg>
+            Жастардың жанрларды тану көрсеткіші
+          </h3>
+          <div class="donut-chart-wrap">
+            <div class="donut-svg-stage">
+              <svg width="170" height="170" viewBox="0 0 100 100">
+                <!-- Фондық шеңбер -->
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#1E293B" stroke-width="14"/>
+                <!-- 78% Сәйкестендірді (Cyan) -->
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#38BDF8" stroke-width="14" stroke-dasharray="186 238" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+                <!-- 16% Жартылай (Gold) -->
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#F59E0B" stroke-width="14" stroke-dasharray="38 238" stroke-dashoffset="-186" transform="rotate(-90 50 50)"/>
+                <!-- 6% Білмеді (Rose) -->
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#F43F5E" stroke-width="14" stroke-dasharray="14 238" stroke-dashoffset="-224" transform="rotate(-90 50 50)"/>
+              </svg>
+              <div class="donut-center-label">
+                <span class="donut-center-pct">78%</span>
+                <span class="donut-center-sub">Толық сәйкестік</span>
+              </div>
+            </div>
+
+            <ul class="chart-legend-list">
+              <li class="legend-item">
+                <span class="legend-color-dot" style="background: #38BDF8;"></span>
+                <span><strong>78%</strong> — Толғау мен Әуезені толық сәйкестендірді</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-color-dot" style="background: #F59E0B;"></span>
+                <span><strong>16%</strong> — Жартылай ұғынды (тек айтыс түрін)</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-color-dot" style="background: #F43F5E;"></span>
+                <span><strong>6%</strong> — Байланысты алғаш рет білді</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2-Диаграмма: Bar Chart -->
+        <div class="chart-card-box">
+          <h3 class="chart-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FCD34D"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg>
+            Казнет кеңістігіндегі дәстүрлі жанрлардың үлесі
+          </h3>
+          <div class="bar-chart-list">
+            <div class="bar-row-item">
+              <div class="bar-row-head">
+                <span>Әуезе (Саяхат және қалалық влогтар)</span>
+                <strong style="color: #F59E0B;">45%</strong>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill fill-aueze" data-width="45%" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="bar-row-item">
+              <div class="bar-row-head">
+                <span>Толғау (Интеллектуалды авторлық подкаст)</span>
+                <strong style="color: #38BDF8;">30%</strong>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill fill-tolgau" data-width="30%" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="bar-row-item">
+              <div class="bar-row-head">
+                <span>Айтыс-тартыс (Стримингтік дебат, баттлдар)</span>
+                <strong style="color: #F43F5E;">15%</strong>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill fill-aitys" data-width="15%" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="bar-row-item">
+              <div class="bar-row-head">
+                <span>Шежіре (Тарихи тредтер мен микро-эсселер)</span>
+                <strong style="color: #10B981;">10%</strong>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill fill-shezhire" data-width="10%" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ғылыми қорытынды карточкасы -->
+      <div class="scientific-conclusion-card">
+        <h4 class="sci-concl-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Ғылыми зерттеудің басты түйіні (Нәтижелерді талдау)
+        </h4>
+        <p class="sci-concl-text">
+          Жүргізілген эмпирикалық сауалнама мен контент-талдау нәтижесінде біздің ғылыми гипотеза толық дәлелденді: Ахмет Байтұрсынұлының 1926 жылы ұсынған «Әдебиет танытқыш» еңбегі тек өткен ғасырдың мұрасы ғана емес, XXI ғасырдың қазақ тілді сандық кеңістігіндегі (YouTube, Spotify, TikTok, X) медиа-өнімдердің теориялық түп-тамыры болып табылады. Осы жүйені меңгерген жас авторлардың контент сапасы мен мәдени құндылығы 2.4 есе жоғары екені анықталды.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ИНТЕРАКТИВТІ КОНТЕНТ КЛАССИФИКАТОРЫ (QUIZ ENGINE)
+       ========================================================================== -->
+  <section class="classifier-section" id="classifierSection">
+    <div class="quiz-container">
+      <div class="section-headline-wrap">
+        <span class="section-badge-top">ИНТЕРАКТИВТІ ДИАГНОСТИКА</span>
+        <h2 class="section-headline-title">КОНТЕНТ КЛАССИФИКАТОРЫ: ӨЗ ЖАНРЫҢЫЗДЫ АНЫҚТАҢЫЗ</h2>
+        <p style="color: #94A3B8; max-width: 750px; margin: 10px auto 0; font-size: 0.95rem;">
+          3 сұраққа жауап беріңіз. Алгоритм сіздің шығармашылық стиліңізді Ахмет Байтұрсынұлының 1926 жылғы классификациясы және 2026 жылғы цифрлық форматы бойынша анықтап береді.
+        </p>
+      </div>
+
+      <div class="quiz-card" style="margin-top: 36px;">
+        <div id="quizDynamicStage">
+          <!-- Динамикалық квиз сатылары осында жүктеледі -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       САЛЫСТЫРМАЛЫ ТАБЛИЦА (TOGGLE VIEW: 1926 ↔ 2026)
+       ========================================================================== -->
+  <section class="toggle-table-section" id="toggleTableSection">
+    <div class="toggle-table-container">
+      <div class="section-headline-wrap">
+        <span class="section-badge-top">САЛЫСТЫРМАЛЫ МАТРИЦА</span>
+        <h2 class="section-headline-title">1926 ТАРИХИ ТЕОРИЯ ↔ 2026 САНДЫҚ МЕДИА</h2>
+        <p style="color: #94A3B8; max-width: 800px; margin: 10px auto 0; font-size: 0.95rem;">
+          Төмендегі батырмалар арқылы тек 1926 жылғы дәстүрлі теорияны немесе тек 2026 жылғы сандық медианы жеке бөліп қарауға болады.
+        </p>
+      </div>
+
+      <!-- Бағандық сүзгі батырмалары -->
+      <div class="table-filter-bar">
+        <button type="button" class="view-toggle-btn active" id="btnViewBoth">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+          Барлығын салыстыру (100 жыл)
+        </button>
+        <button type="button" class="view-toggle-btn" id="btnView1926">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          📜 1926: Тарихи теория
+        </button>
+        <button type="button" class="view-toggle-btn" id="btnView2026">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+          🚀 2026: Заманауи медиа
+        </button>
+      </div>
+
+      <!-- Салыстырмалы кесте -->
+      <div class="modern-compare-table-wrap">
+        <table class="modern-compare-table" id="modernCompareTable">
+          <thead>
+            <tr>
+              <th style="width: 24%;">Өлшемдік категория</th>
+              <th class="col-1926 col-1926-data" style="width: 38%;">📜 1926 ЖЫЛ: ТАРИХИ ТЕОРИЯ (А. БАЙТҰРСЫНҰЛЫ)</th>
+              <th class="col-2026 col-2026-data" style="width: 38%;">🚀 2026 ЖЫЛ: ЗАМАНАУИ САНДЫҚ МЕДИА КЕҢІСТІГІ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Негізгі бағыты мен миссиясы</strong></td>
+              <td class="col-1926-data">«Сөз өнері — адам санасының көрігі». Халықтың көркемдік танымын қалыптастыру, ұлттық тіл мен әдебиет негізін түзу.</td>
+              <td class="col-2026-data">«Сандық сторителлинг». Аудиторияның назарын аудару, визуалды әсер қалдыру, әлеуметтік пікір мен танымдық диалог құру.</td>
+            </tr>
+            <tr>
+              <td><strong>Таралу ортасы мен құралы</strong></td>
+              <td class="col-1926-data">Төте жазу әліпбиімен басылған қағаз кітаптар, Ташкент баспалары, ауызша далалық айтыс мінбері.</td>
+              <td class="col-2026-data">YouTube, Spotify, Apple Podcasts, TikTok, X (Twitter), жоғары сапалы 4K бейнекамералар мен сандық микрофондар.</td>
+            </tr>
+            <tr>
+              <td><strong>Қабылдаушы аудитория</strong></td>
+              <td class="col-1926-data">Семинария шәкірттері, оқыған азаматтар, дала тыңдармандары мен сауат ашу мектептері.</td>
+              <td class="col-2026-data">Миллиондаған жаһандық сандық қолданушылар, қазақ тілді жастар, желідегі белсенді қауымдастықтар.</td>
+            </tr>
+            <tr>
+              <td><strong>Ақпараттың таралу жылдамдығы</strong></td>
+              <td class="col-1926-data">Апталар мен айлар (поштабайлар, баспа көшірмелері, ауызша жеткізушілер арқылы).</td>
+              <td class="col-2026-data">Миллисекундтар (Тікелей эфирлер, Push-хабарламалар, виралды желілік алгоритмдер).</td>
+            </tr>
+            <tr>
+              <td><strong>Басты көркемдік әдістері</strong></td>
+              <td class="col-1926-data">Қанатты сөз, төгілме жыр, көріктеу, кейіптеу, философиялық толғау, сүгіреттеу тәсілдері.</td>
+              <td class="col-2026-data">Динамикалық монтаж, саунд-дизайн, инфографика, интимдік вокал тембрі, кадр композициясы.</td>
+            </tr>
+            <tr>
+              <td><strong>Ұлттық код пен сабақтастық</strong></td>
+              <td class="col-1926-data">Қазақтың төл дүниетанымы мен дала рухын сақтаудың алғашқы ғылыми теориясы.</td>
+              <td class="col-2026-data">Байтұрсынұлы терминологиясының сандық медиада қайта жаңғыруы және ұлттық брендке айналуы.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PDF Экспорт және жүктеу әрекеті -->
+      <div class="pdf-export-action-bar">
+        <button type="button" class="pdf-download-btn" id="btnPdfDownload">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          📥 Оқушылар мен креаторларға арналған «Паспорт жанров» PDF нұсқасын жүктеу / Басып шығару
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       МЕДИА ГАЛЕРЕЯСЫ (ФОТО, ЖӘДІГЕРЛЕР ЖӘНЕ ВИДЕОЛАР)
+       ========================================================================== -->
+  <section class="media-gallery-section">
+    <div class="section-headline-wrap">
+      <span class="section-badge-top">АРХИВ ПЕН МУЛЬТИМЕДИА</span>
+      <h2 class="section-headline-title">САНДЫҚ ЖӘНЕ ТАРИХИ МҰРАҒАТ ГАЛЕРЕЯСЫ</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Card 1 -->
+      <div class="gallery-card" data-title="Ахмет Байтұрсынұлының жұмыс кабинеті (1926 ж.)" data-desc="Ташкент қаласында «Әдебиет танытқыш» еңбегін жазу үстіндегі тарихи шынайы бейнесі. Шам жарығы, көне қолжазбалар мен қауырсын қалам.">
+        <img src="assets/images/ahmet_1926_study.jpg" alt="Ахмет Байтұрсынұлының жұмыс кабинеті">
+        <div class="gallery-card-overlay">
+          <span class="gallery-badge">Тарихи архив</span>
+          <div class="gallery-card-title">Ахмет Байтұрсынұлы кабинетінде</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="gallery-card" data-title="«Әдебиет танытқыш» түпнұсқа қолжазбасы (1926 ж.)" data-desc="1926 жылы Ташкентте Төте жазумен (араб қарпімен) басылып шыққан тұңғыш қазақ әдебиет теориясы оқулығының мұрағаттық парағы.">
+        <img src="assets/images/ancient_manuscript.jpg" alt="Әдебиет танытқыш қолжазбасы">
+        <div class="gallery-card-overlay">
+          <span class="gallery-badge">Сирек жәдігер</span>
+          <div class="gallery-card-title">«Әдебиет танытқыш» қолжазбасы</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="gallery-card" data-title="Қазақтың киелі домбырасы және «Аққұм» күйі" data-desc="Дала философиясын ішектер тербелісімен жеткізген төгілме домбыра дәстүрі. Құрманғазы мен Дина күйлерінің рухани сабақтастығы.">
+        <img src="assets/images/kazakh_vlog_village.jpg" alt="Дала үні және домбыра">
+        <div class="gallery-card-overlay">
+          <span class="gallery-badge">Музыкалық мұра</span>
+          <div class="gallery-card-title">«Аққұм» күйі және табиғат үні</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="gallery-card" data-title="Заманауи сандық студия және медиа контент (2026 ж.)" data-desc="XXI ғасырдағы қазақ тіліндегі сандық сторителлинг, студиялық подкастинг және саяхат влогтарының жаңа толқыны.">
+        <img src="assets/images/media_2026_creator.jpg" alt="Заманауи медиа студия">
+        <div class="gallery-card-overlay">
+          <span class="gallery-badge">Сандық дәуір</span>
+          <div class="gallery-card-title">2026 Сандық медиа студиясы</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ФУТЕР (SITE FOOTER)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-copy">
+        © 2026. БАРЛЫҚ ҚҰҚЫҚТАР ҚОРҒАЛҒАН. «ӘДЕБИЕТ ТАНЫТҚЫШ: 100 ЖЫЛ»
+      </div>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Басты бет</a>
+        <a href="aueze.html" class="footer-link">Әуезе</a>
+        <a href="tolgau.html" class="footer-link">Толғау</a>
+        <a href="aitys.html" class="footer-link">Айтыс</a>
+        <a href="timeline.html" class="footer-link">Таймлайн</a>
+        <a href="izimen.html" class="footer-link">Ахметтің ізімен</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       МОДАЛЬДАР (MODAL DIALOGS)
+       ========================================================================== -->
+
+  <!-- 1. Іздеу терезесі (Search Modal) -->
+  <div class="modal-overlay" id="searchModalOverlay">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="searchModalClose" aria-label="Жабу">×</button>
+      <div style="padding: 24px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <h3 style="color: #FFFFFF; font-size: 1.2rem; font-weight: 800; margin-bottom: 12px;">Сайт бойынша іздеу</h3>
+        <input type="text" id="modalSearchField" placeholder="Тақырыпты немесе кілт сөзді жазыңыз..." style="width: 100%; padding: 12px 18px; border-radius: 9999px; background: #1E293B; border: 1px solid #38BDF8; color: #FFF; outline: none; font-size: 0.95rem;">
+      </div>
+      <div id="searchResultsList" style="max-height: 360px; overflow-y: auto;">
+        <!-- Динамикалық нәтижелер -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Бейне терезесі (Video Vlog Modal) -->
+  <div class="modal-overlay" id="videoModalOverlay">
+    <div class="modal-window" style="max-width: 820px;">
+      <button class="modal-close-btn" id="videoModalClose" aria-label="Жабу">×</button>
+      <div style="position: relative; padding-top: 56.25%; background: #000;">
+        <img src="assets/images/kazakh_vlog_village.jpg" alt="Влог бейнесі" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #FFF;">
+          <div style="width: 64px; height: 64px; border-radius: 50%; background: #E11D48; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 0 25px rgba(225,29,72,0.8);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFF"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <h4 style="font-size: 1.3rem; font-weight: 900; margin-bottom: 6px;">АУЫЛДАҒЫ КҮНДЕЛІК: ТАУ ЕТЕГІНДЕГІ ТАҢ</h4>
+          <p style="font-size: 0.9rem; color: #E2E8F0;">Заманауи саяхат және өмір салты влогы (4K UHD)</p>
+        </div>
+      </div>
+      <div style="padding: 20px; background: #0F172A; display: flex; align-items: center; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.8rem; font-weight: 800; color: #38BDF8; letter-spacing: 1px;">ЖАНР: ӘУЕЗЕ / САНДЫҚ ВЛОГ</span>
+          <div style="color: #94A3B8; font-size: 0.85rem; margin-top: 4px;">Көшпелілердің ауызша күнделігінен YouTube және TikTok форматтарына дейін</div>
+        </div>
+        <a href="aueze.html" style="padding: 8px 18px; border-radius: 9999px; background: #0284C7; color: #FFF; text-decoration: none; font-size: 0.85rem; font-weight: 800;">Әуезе бөліміне өту →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Көне қолжазба терезесі (Manuscript Lightbox Modal) -->
+  <div class="modal-overlay" id="manuscriptModalOverlay">
+    <div class="modal-window" style="max-width: 800px;">
+      <button class="modal-close-btn" id="manuscriptModalClose" aria-label="Жабу">×</button>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; background: #0F172A;">
+        <div style="height: 420px; overflow: hidden;">
+          <img src="assets/images/ancient_manuscript.jpg" alt="Көне қолжазба" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 28px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <span style="font-size: 0.75rem; font-weight: 800; color: #F59E0B; letter-spacing: 1.5px;">АРХИВТІК ЖӘДІГЕР • 1926 ЖЫЛ</span>
+            <h4 style="font-size: 1.35rem; font-weight: 900; color: #FFFFFF; margin: 8px 0 12px;">АХМЕТ БАЙТҰРСЫНҰЛЫ «ӘДЕБИЕТ ТАНЫТҚЫШ»</h4>
+            <p style="font-size: 0.88rem; color: #CBD5E1; line-height: 1.6; margin-bottom: 14px;">
+              «Әуезе — сөз өнеріндегі көркем суреттеме мен оқиғаны баяндаудың арқауы. Бұл қолжазба қазақ әдебиеттану ғылымының негізін қалаған іргелі еңбек болып табылады.»
+            </p>
+          </div>
+          <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 14px;">
+            <a href="aueze.html" style="display: inline-block; padding: 8px 20px; border-radius: 9999px; background: #B45309; color: #FFF; text-decoration: none; font-size: 0.85rem; font-weight: 800;">Әуезе тарауын толық оқу →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Галерея лайтбоксы (Media Gallery Lightbox Modal) -->
+  <div class="modal-overlay" id="galleryLightboxModal">
+    <div class="modal-window" style="max-width: 860px;">
+      <button class="modal-close-btn" id="galleryLightboxClose" aria-label="Жабу">×</button>
+      <div style="position: relative; max-height: 480px; overflow: hidden; background: #000; text-align: center;">
+        <img id="lightboxModalImg" src="" alt="Үлкейтілген сурет" style="max-height: 480px; width: auto; max-width: 100%; object-fit: contain;">
+      </div>
+      <div style="padding: 22px 26px; background: #0F172A;">
+        <h4 id="lightboxModalTitle" style="color: #FFFFFF; font-size: 1.25rem; font-weight: 900; margin-bottom: 6px;"></h4>
+        <p id="lightboxModalDesc" style="color: #CBD5E1; font-size: 0.9rem; line-height: 1.5;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/main.js"></script>
+</body>
+</html>
